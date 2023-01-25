@@ -33,7 +33,7 @@ const App = () => {
         const newState = previousState.map((object) => {
           if (object.id === value){
             // kinda sus (its is adding the double of this value CHECK LATER)
-            object.quantity += 0.5;
+            object.quantity += 1;
           }
           return object;
         })
@@ -50,7 +50,7 @@ const App = () => {
     setCart((previousState) => {
       const unfilteredState =  previousState.map((object) => {
         if (object.id === value){
-          object.quantity -= 0.5;
+          object.quantity -= 1;
         }
         return object;
       })
